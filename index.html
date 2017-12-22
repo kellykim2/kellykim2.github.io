@@ -15,6 +15,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit-icons.min.js"></script>
 
+<!--Custom CSS -->
+<link rel="stylesheet" href="css/index.css"/>
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -25,181 +28,172 @@
 
 <body>
 <!-- UI KIT NAV BAR -->
-<div class="uk-position-relative">
-    <div class="uk-position-top">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Kelly Kim</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-nav-header">Personal Project</li>
-                                <li><a href="#">Food Ya XXX</a></li>
-                                <li class="uk-nav-header">Professional Experience</li>
-                                <li><a href="#">LA Shoe Lab</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Social Media</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
-<section>
-<div class="jumbotron text-center">
-  <h1 class="display-3">Kelly Kim's Portfolio</h1>
-  <p class="lead">Welcome to Kelly's portfolio page!</p>
-  <hr class="my-4">
-  <p>Please connect to Kelly via Twitter, LinkedIn, and GitHub!</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button" disabled>Connect!</a>
-  </p>
-</div>
-</section>
-<section>
-  <div class="container" id="education">
-    <div class="row">
-      <div class="col-xs-12 text-center">
-        <h1>Education and School Projects</h1>
-        <p> Recently graduated from California State University Northridge with B.S. Computer Science</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
- <div class="uk-child-width-expand@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
-    <div uk-lightbox="animation: slide">
-        <div class="uk-card uk-card-default uk-card-body" >
-            <a class="uk-card-title" href="assets/qtip-1.jpeg" data-caption="QTIP, Quick Time Information Price, is an web application utiliizing eBay's API to deliver users with statistical analysis of a product sold on ebay.">Senior Design: QTIP
-            	<a href="assets/qtip-2.jpg" data-caption="Search results displays keyword search results from eBay's database."></a>
-            	<a href="assets/qtip-3.jpeg" data-caption="When user selects a specific item, we display recent sold items in plotted graph to visualize recent sales data, and recent Max, Min and Mean sold prices. "></a>
-            </a>
-            <p>Qtip is an Web Application using eBay's API to retrieve recent price data of an item searche by user, and provides user statistical analysis on price variation data. </p>
-        </div>
-	 </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-card-title">Computer Graphics Systems and Design</h3>
-            <p>Worked on generating 3D computer graphic application to portray a star system to simulate 3D space movements and 3D space collision detection. Exposure to the beginner shader programming as well. OpenGL, Blender, C++</p>
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-card-title">Advanced Network Topics</h3>
-            <p>Semester long research to understand net neutrality and possibility of Quality of Service detection.</p>
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-card-title">Algorithm Design and Analysis</h3>
-            <p>Dynamic Programming, Divide and Conquere, finding best possible solution to classic NP problems. JAVA</p>
-        </div>
-    </div>
-</div>
-  <div class="uk-section uk-section-large uk-section-muted">
-    <div class="uk-container">
-        <div class="uk-inline">
-            <img src="assets/logo-quilt.gif" alt="">
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                <p>Languages, Tools and IDEs used for various school projects and researches.</p>
-            </div>
-                
-            
-		</div>
-       
-    </div>
-</div>
-</section>
 
-<section>
-	<div class="container">
-		<div class="row">
-        	<div class="col-lg-12 text-center">
-            	<h2>Latest Work</h2>
-            	<p>Kelly's latest projects</p>
-            </div>
+  <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Kelly Kim</a></li>
+              <li><a href="#">Education</a></li>
+              <li>
+                  <a href="#">Portfolio</a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Personal Project</li>
+                          <li><a href="#">Food Ya XXX</a></li>
+                          <li class="uk-nav-header">Professional Experience</li>
+                          <li><a href="#">LA Shoe Lab</a></li>
+                          <li class="uk-nav-divider"></li>
+                          <li><a href="#">Social Media</a></li>
+                      </ul>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <section>
+    <div class="jumbotron text-center">
+      <h1 class="display-3">Kelly Kim's Portfolio</h1>
+      <p class="lead">Welcome to Kelly's portfolio page!</p>
+      <hr class="my-4">
+      <p>Please connect to Kelly via Twitter, LinkedIn, and GitHub!</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button" disabled>Connect!</a>
+      </p>
+    </div>
+  </section>
+  <div class="uk-section">
+    <div class="container" id="education">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Education and School Projects</h1>
+          <p> Recently graduated from California State University Northridge with B.S. Computer Science</p>
         </div>
-        <div class="row">
-        	<div class="col-md-6 text-center">
-            	<img src="https://media.giphy.com/media/RSZI67yZwYsxi/giphy.gif" alt="">
-                
-            </div>
-        	<div class="col-md-6 text-center">
-            	<img src="https://media.giphy.com/media/xUPGcuomRFMUcsB9nO/giphy.gif" alt="">
-                
-            </div>
-        </div>
-        <div class="row">
-        	<div class="col-md-6 text-center">
-        		<h3>LA Shoe Lab</h3>
-            	<h6>Local shoe repair store's business website</h6>	
-			</div>
-        	<div class="col-md-6 text-center">
-        		<h3>Food Ya XXX</h3>
-				<h6>Kelly's vinge play list. Wanna see my uncensored playlist?</h6>
-			</div>
-		</div>
-	</div>
-</section>
-<hr>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1>Meet Kelly in Social Media!</h1>
-        <p>Connect to Kelly through LinkedIn, Twitter, GitHub</p>
       </div>
     </div>
+
+   <div class="uk-child-width-expand@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+      <div uk-lightbox="animation: slide">
+          <div class="uk-card uk-card-default uk-card-body" >
+              <a class="uk-card-title" href="assets/qtip-1.jpeg" data-caption="QTIP, Quick Time Information Price, is an web application utiliizing eBay's API to deliver users with statistical analysis of a product sold on ebay.">Senior Design: QTIP
+              	<a href="assets/qtip-2.jpg" data-caption="Search results displays keyword search results from eBay's database."></a>
+              	<a href="assets/qtip-3.jpeg" data-caption="When user selects a specific item, we display recent sold items in plotted graph to visualize recent sales data, and recent Max, Min and Mean sold prices. "></a>
+              </a>
+              <p>Qtip is an Web Application using eBay's API to retrieve recent price data of an item searche by user, and provides user statistical analysis on price variation data. </p>
+          </div>
+  	 </div>
+      <div>
+          <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title">Computer Graphics Systems and Design</h3>
+              <p>Worked on generating 3D computer graphic application to portray a star system to simulate 3D space movements and 3D space collision detection. Exposure to the beginner shader programming as well. OpenGL, Blender, C++</p>
+          </div>
+      </div>
+      <div>
+          <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title">Advanced Network Topics</h3>
+              <p>Semester long research to understand net neutrality and possibility of Quality of Service detection.</p>
+          </div>
+      </div>
+      <div>
+          <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title">Algorithm Design and Analysis</h3>
+              <p>Dynamic Programming, Divide and Conquere, finding best possible solution to classic NP problems. JAVA</p>
+          </div>
+      </div>
   </div>
-</section>
-<hr>
-<div class="section well">
+    <div class="uk-section uk-section-large uk-section-muted">
+      <div class="uk-container">
+          <div class="uk-inline">
+              <img src="assets/logo-quilt.gif" alt="">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                  <p>Languages, Tools and IDEs used for various school projects and researches.</p>
+              </div>
+                  
+              
+  		</div>
+         
+      </div>
+  </div>
+  </div>
+
+  <div class="uk-section">
+  		<div class="row">
+          	<div class="col-lg-12 text-center">
+              	<h2>Latest Work</h2>
+              	<p>Kelly's latest projects</p>
+              </div>
+          </div>
+          <div class="row">
+          	<div class="col-md-6 text-center">
+              	<img src="https://media.giphy.com/media/RSZI67yZwYsxi/giphy.gif" alt="LA Shoe Lab.com">
+                  
+              </div>
+          	<div class="col-md-6 text-center">
+              	<img src="https://media.giphy.com/media/xUPGcuomRFMUcsB9nO/giphy.gif" alt="Food Ya XXX.com">
+                  
+              </div>
+          </div>
+          <div class="row">
+          	<div class="col-md-6 text-center">
+          		<h3 href="http://www.lashoelab.com">LA Shoe Lab</h3>
+              	<h6>Local shoe repair store's business website</h6>	
+  			</div>
+          	<div class="col-md-6 text-center">
+          		<h3>Food Ya XXX</h3>
+  				<h6>Kelly's vinge play list. Wanna see my uncensored playlist?</h6>
+  			</div>
+  		</div>
+  </div>
+  <hr>
+  <div class="uk-section">
     <div class="container">
-   	  <div class="row">
-		<div class="col-lg-4 col-md-4">
-            <h3 class="text-center">WHO IS KELLY?</h3>
-            <h5>Software engieer, <br>having too much fun with new technologies!</h5>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>Meet Kelly in Social Media!</h1>
+          <p>Connect to Kelly through LinkedIn, Twitter, GitHub</p>
         </div>
-		<div class="col-lg-4 col-md-4">
-		  <h3 class="text-center">GET IN TOUCH</h3>
-          <address class="text-center">
-  <strong>Kelly Inc.</strong><br>
-  Los Angeles<br>
-  California, US<br>
-  <abbr title="Phone">P:</abbr> (DON) TCA-LLME
-</address>
-</div>
-		<div class="col-lg-4 col-md-4">
-		  <h3 class="text-center">NEWSLETTER</h3>
-         	<p>Sign up for latest publications by Kelly</p>
-          <form>
-    <div class="form-group col-lg-9 col-md-8 col-sm-10 col-xs-10">
-<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    </div>
-<button type="submit" class="btn btn-default" disabled>(Coming Soon)<br>
-</button>
-</form>
-		</div>
-</div>
-    </div>
-	</div>
-    <footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>Copyright © Kelly Kim. All rights reserved. Wink Wink</p>
       </div>
     </div>
   </div>
-</footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <hr>
+  <div class="uk-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <h3 class="text-center">WHO IS KELLY?</h3>
+          <h5>Software engieer, <br>having too much fun with new technologies!</h5>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h3 class="text-center">GET IN TOUCH</h3>
+          <address class="text-center">
+            <strong>Kelly Inc.</strong><br>Los Angeles<br>California, US<br>
+            <abbr title="Phone">P:</abbr> (DON) TCA-LLME
+          </address>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h3 class="text-center">NEWSLETTER</h3>
+            <p>Sign up for latest publications by Kelly</p>
+            <form>
+              <div class="form-group col-lg-9 col-md-8 col-sm-10 col-xs-10">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-default" disabled>(Coming Soon)<br></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Copyright © Kelly Kim. All rights reserved. Wink Wink</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
